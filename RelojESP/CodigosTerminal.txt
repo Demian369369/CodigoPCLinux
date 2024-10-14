@@ -1,0 +1,44 @@
+Primero debes de conectar el reloj a tu lap 
+
+Crear un venv:
+demianrgz23  penguin  …/RelojESP  main ◔  python3 -m venv /home/demianrgz23/Codigo/Proyectos_con_pedro/RelojESP/reloj_nue
+vo
+
+ demianrgz23  penguin  …/RelojESP  main ◔  source /home/demianrgz23/Codigo/Proyectos_con_pedro/RelojESP/reloj_nuevo/bin/ac
+tivate
+Despues asegurar que estamos en el venv:
+--which python
+--which pip
+
+
+Activar Venv para reloj
+--source reloj/bin/activate
+
+--source /home/demianrgz23/Codigo/Proyectos_con_pedro/RelojESP/reloj/bin/activate
+Instalar APIS
+
+--sudo apt update 
+y luego: 
+--arduino, --python, --esptool, --adafruit---ampy, --machine, --network
+
+Ver si tienes APIS:
+--pip list
+
+Si ya tienes las apis Hacer update: 
+--sudo apt update 
+
+ver si esta conectado el sh1106:
+ls /dev/ttyUSB*
+
+flashear: 
+esptool.py --port /dev/ttyUSB0 erase_flash
+
+meter documentos: 
+ampy --port /dev/ttyUSB0 put main.py
+
+activar screen:
+screen /dev/ttyUSB0 115200
+
+--import os 
+os.listdir()
+Esto para ver si se cargaron los documentos
